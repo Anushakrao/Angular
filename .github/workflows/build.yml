@@ -1,5 +1,12 @@
-on: push  
+on:
+  push:
+    branches:
+      - master
+    tags:
+      - v1.0
+
 name: Build Angular project  
+
 jobs:  
   build:  
     runs-on: ubuntu-latest  
