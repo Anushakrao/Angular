@@ -36,6 +36,6 @@ jobs:
         uses: ncipollo/release-action@v1  
         with:  
           artifacts: "dist/angular-githubaction/*"  
-          tags: true  
+          tag: true  
           token: ${{ secrets.Deployment }}   
           
