@@ -3,6 +3,8 @@ on:
   push:
     branches:
       - master
+    
+    
 
 
 jobs:  
@@ -34,4 +36,6 @@ jobs:
         uses: ncipollo/release-action@v1  
         with:  
           artifacts: "dist/angular-githubaction/*"  
+          tags: true  
           token: ${{ secrets.Deployment }}   
+          
